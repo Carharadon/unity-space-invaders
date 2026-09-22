@@ -65,11 +65,10 @@ namespace SpaceInvaders.Core
             _stepTimer -= Time.deltaTime;
 
             if (_stepTimer <= 0f)
-
+            {
                 MoveEnemiesDown();
-
                 _stepTimer = _stepInterval;
-            
+            }
         }
 
         private void MoveEnemiesDown()
